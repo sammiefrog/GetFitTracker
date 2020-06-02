@@ -1,14 +1,31 @@
-// const db = require("../models");
+const express = require("express");
+const db = require("../models");
 
-// app.get("/notes", (req, res) => {
-//   db.Note.find({})
-//     .then((dbNote) => {
-//       res.json(dbNote);
-//     })
-//     .catch((err) => {
-//       res.json(err);
-//     });
-// });
+const router = express.Router();
+
+router.get("/workouts", (req, res) => {
+
+  db.Workout.find({})
+    .then((dbWorkout) => {
+      res.json(dbWorkout);
+    })
+    .catch((err) => {
+      res.json(err);
+    });
+    
+});
+
+router.post("/workouts", ({ body }, res) => {
+    const newWorkout = new Workout(body);
+
+    db.Workout.create(newWorkout)
+        .then(dbWorkout => {
+            res.json(dbWorkout);
+        }).catch(err => {
+            res.json(err);
+        });
+    
+});
 
 // app.get("/user", (req, res) => {
 //   db.User.find({})
@@ -43,3 +60,4 @@
 //       res.json(err);
 //     });
 // });
+module.exports = router;
