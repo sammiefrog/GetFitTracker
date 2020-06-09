@@ -12,7 +12,7 @@ https://getfittracker.herokuapp.com/
 <li><a href="#description">Description</a></li>  
 <li><a href="#tech">Technology Stack</a></li> 
 <li><a href="#usage">Usage</a></li> 
-<h2 id= "screenshots">Screenshots</h2>
+<li><a href="#screenshots">Screenshots</a></li> 
 <li><a href="#contact">Contact</a></li> 
 <li><a href="#tests">Tests</a></li> 
   
@@ -20,13 +20,23 @@ https://getfittracker.herokuapp.com/
 This is an app to track workouts, and exercises within those workouts. On page load, a user will see their last workout. They can either continue or start a new one. On the fitness tracker dashboard, a user can view their stats for the past 7 days.
 
 <h2 id= "technology">Technology Stack</h2>
- Node.Js, Express, JavaScript, GIT, GitHub, MongoDB, HTML, CSS, Heroku
+<li>Node.Js</li>
+<li>Express</li>
+<li>JavaScript</li>
+<li>GIT</li>
+<li>GitHub</li>
+<li>MongoDB</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>Heroku</li>
   
 <h2 id= "usage">Usage</h2>
 Use this to track workouts.
 
 <h2 id= "screenshots">Screenshots</h2>
-
+<img src="./public/assets/images/gft1.png" alt="photo of working app">
+<img src="./public/assets/images/gft2.png" alt="photo of working app">
+<img src="./public/assets/images/gft3.png" alt="photo of working app">
   
 <h2 id= "contact">Contact</h2>
 <li>Name: Sammantha Sasenick</li> 
@@ -36,4 +46,4 @@ Use this to track workouts.
 <li>LinkedIn: www.linkedin.com/in/sammantha-sasenick412</li> 
     
 <h2 id= "tests">Tests</h2>
- 
+<img src="./public/assets/images/test.gif" alt="animation of working app">
